@@ -9,13 +9,20 @@
             "email": "hello@ricko.me"
         }
     ],
+    "repositories":
+    [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Vivify-Ideas/laravel-forum"
+        }
+    ],
     "require": {
         "php": ">=5.4.0",
-        "riari/laravel-forum": "~3.0"
+        "riari/laravel-forum": "custom"
     },
     "autoload": {
         "psr-4": {
-            "Riari\\Forum\\Frontend\\": "src"
+            "VivifyIdeas\\Forum\\Frontend\\": "src"
         }
     }
 }
