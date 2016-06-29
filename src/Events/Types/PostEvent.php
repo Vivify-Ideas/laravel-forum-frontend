@@ -1,6 +1,6 @@
-<?php namespace Riari\Forum\Frontend\Events\Types;
+<?php namespace VivifyIdeas\Forum\Frontend\Events\Types;
 
-use Riari\Forum\Models\Post;
+use VivifyIdeas\Forum\Models\Post;
 
 class PostEvent
 {

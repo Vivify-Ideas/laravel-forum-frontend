@@ -1,6 +1,6 @@
-<?php namespace Riari\Forum\Frontend\Listeners;
+<?php namespace VivifyIdeas\Forum\Frontend\Listeners;
 
-use Riari\Forum\Frontend\Events\UserViewingThread;
+use VivifyIdeas\Forum\Frontend\Events\UserViewingThread;
 use Illuminate\Contracts\Auth\Guard;
 
 class MarkThreadAsRead

@@ -1,12 +1,12 @@
-<?php namespace Riari\Forum\Frontend;
+<?php namespace VivifyIdeas\Forum\Frontend;
 
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
-use Riari\Forum\Frontend\Events\UserViewingThread;
-use Riari\Forum\Frontend\Listeners\MarkThreadAsRead;
-use Riari\Forum\Frontend\Support\Forum;
+use VivifyIdeas\Forum\Frontend\Events\UserViewingThread;
+use VivifyIdeas\Forum\Frontend\Listeners\MarkThreadAsRead;
+use VivifyIdeas\Forum\Frontend\Support\Forum;
 
 class ForumFrontendServiceProvider extends ServiceProvider
 {

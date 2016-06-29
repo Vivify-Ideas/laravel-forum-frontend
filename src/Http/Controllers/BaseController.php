@@ -1,4 +1,4 @@
-<?php namespace Riari\Forum\Frontend\Http\Controllers;
+<?php namespace VivifyIdeas\Forum\Frontend\Http\Controllers;
 
 use Forum;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -8,8 +8,9 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Collection;
-use Riari\Forum\API\Dispatcher;
-use Riari\Forum\Contracts\API\ReceiverContract;
+use VivifyIdeas\Forum\API\Dispatcher;
+use VivifyIdeas\Forum\Contracts\API\ReceiverContract;
+use VivifyIdeas\Forum\Http\Exception\ResponseException;
 
 abstract class BaseController extends Controller implements ReceiverContract
 {
@@ -53,7 +54,7 @@ abstract class BaseController extends Controller implements ReceiverContract
         if ($response->getStatusCode() == 422) {
             $errors = $response->getOriginalContent()['validation_errors'];
 
-            throw new HttpResponseException(
+            throw new ResponseException(
                 redirect()->back()->withInput($request->input())->withErrors($errors)
             );
         }

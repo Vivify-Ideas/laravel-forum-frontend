@@ -1,4 +1,4 @@
-<?php namespace Riari\Forum\Frontend\Events;
+<?php namespace VivifyIdeas\Forum\Frontend\Events;
 
 use Illuminate\Database\Eloquent\Collection;
 

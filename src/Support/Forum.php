@@ -1,9 +1,9 @@
-<?php namespace Riari\Forum\Frontend\Support;
+<?php namespace VivifyIdeas\Forum\Frontend\Support;
 
 use Illuminate\Routing\Router;
-use Riari\Forum\Models\Category;
-use Riari\Forum\Models\Post;
-use Riari\Forum\Models\Thread;
+use VivifyIdeas\Forum\Models\Category;
+use VivifyIdeas\Forum\Models\Post;
+use VivifyIdeas\Forum\Models\Thread;
 use Session;
 
 class Forum
