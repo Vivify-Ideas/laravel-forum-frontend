@@ -1,6 +1,6 @@
-<?php namespace VivifyIdeas\Forum\Frontend\Events\Types;
+<?php namespace Riari\Forum\Frontend\Events\Types;
 
-use VivifyIdeas\Forum\Models\Category;
+use Riari\Forum\Models\Category;
 
 class CategoryEvent
 {

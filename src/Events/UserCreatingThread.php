@@ -1,6 +1,6 @@
-<?php namespace VivifyIdeas\Forum\Frontend\Events;
+<?php namespace Riari\Forum\Frontend\Events;
 
-use VivifyIdeas\Forum\Frontend\Events\Types\CategoryEvent;
+use Riari\Forum\Frontend\Events\Types\CategoryEvent;
 
 class UserCreatingThread extends CategoryEvent
 {

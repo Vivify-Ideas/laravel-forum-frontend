@@ -1,10 +1,10 @@
-<?php namespace VivifyIdeas\Forum\Frontend\Http\Controllers;
+<?php namespace Riari\Forum\Frontend\Http\Controllers;
 
 use Forum;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
-use VivifyIdeas\Forum\Frontend\Events\UserViewingCategory;
-use VivifyIdeas\Forum\Frontend\Events\UserViewingIndex;
+use Riari\Forum\Frontend\Events\UserViewingCategory;
+use Riari\Forum\Frontend\Events\UserViewingIndex;
 
 class CategoryController extends BaseController
 {

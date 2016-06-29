@@ -18,11 +18,11 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "riari/laravel-forum": "dev-custom"
+        "riari/laravel-forum": "dev-vivify"
     },
     "autoload": {
         "psr-4": {
-            "VivifyIdeas\\Forum\\Frontend\\": "src"
+            "Riari\\Forum\\Frontend\\": "src"
         }
     }
 }

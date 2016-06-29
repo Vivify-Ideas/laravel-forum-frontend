@@ -1,10 +1,10 @@
-<?php namespace VivifyIdeas\Forum\Frontend\Http\Controllers;
+<?php namespace Riari\Forum\Frontend\Http\Controllers;
 
 use Forum;
 use Illuminate\Http\Request;
-use VivifyIdeas\Forum\Frontend\Events\UserCreatingPost;
-use VivifyIdeas\Forum\Frontend\Events\UserEditingPost;
-use VivifyIdeas\Forum\Frontend\Events\UserViewingPost;
+use Riari\Forum\Frontend\Events\UserCreatingPost;
+use Riari\Forum\Frontend\Events\UserEditingPost;
+use Riari\Forum\Frontend\Events\UserViewingPost;
 
 class PostController extends BaseController
 {

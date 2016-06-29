@@ -1,6 +1,6 @@
-<?php namespace VivifyIdeas\Forum\Frontend\Events\Types;
+<?php namespace Riari\Forum\Frontend\Events\Types;
 
-use VivifyIdeas\Forum\Models\Thread;
+use Riari\Forum\Models\Thread;
 
 class ThreadEvent
 {

@@ -1,13 +1,13 @@
-<?php namespace VivifyIdeas\Forum\Frontend\Http\Controllers;
+<?php namespace Riari\Forum\Frontend\Http\Controllers;
 
 use Forum;
 use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Gate;
-use VivifyIdeas\Forum\Frontend\Events\UserCreatingThread;
-use VivifyIdeas\Forum\Frontend\Events\UserMarkingNew;
-use VivifyIdeas\Forum\Frontend\Events\UserViewingNew;
-use VivifyIdeas\Forum\Frontend\Events\UserViewingThread;
+use Riari\Forum\Frontend\Events\UserCreatingThread;
+use Riari\Forum\Frontend\Events\UserMarkingNew;
+use Riari\Forum\Frontend\Events\UserViewingNew;
+use Riari\Forum\Frontend\Events\UserViewingThread;
 
 class ThreadController extends BaseController
 {

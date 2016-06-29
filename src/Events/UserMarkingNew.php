@@ -1,4 +1,4 @@
-<?php namespace VivifyIdeas\Forum\Frontend\Events;
+<?php namespace Riari\Forum\Frontend\Events;
 
 class UserMarkingNew
 {

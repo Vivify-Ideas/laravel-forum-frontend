@@ -1,4 +1,4 @@
-<?php namespace VivifyIdeas\Forum\Frontend\Http\Controllers;
+<?php namespace Riari\Forum\Frontend\Http\Controllers;
 
 use Forum;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -8,9 +8,9 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Collection;
-use VivifyIdeas\Forum\API\Dispatcher;
-use VivifyIdeas\Forum\Contracts\API\ReceiverContract;
-use VivifyIdeas\Forum\Http\Exception\ResponseException;
+use Riari\Forum\API\Dispatcher;
+use Riari\Forum\Contracts\API\ReceiverContract;
+use Riari\Forum\Http\Exception\ResponseException;
 
 abstract class BaseController extends Controller implements ReceiverContract
 {
