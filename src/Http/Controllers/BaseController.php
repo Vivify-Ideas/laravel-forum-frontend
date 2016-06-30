@@ -2,8 +2,6 @@
 
 use Forum;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-use Illuminate\Foundation\Validation\ValidatesRequests;
-use Illuminate\Http\Exception\HttpResponseException;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
@@ -11,6 +9,7 @@ use Illuminate\Support\Collection;
 use Riari\Forum\API\Dispatcher;
 use Riari\Forum\Contracts\API\ReceiverContract;
 use Riari\Forum\Http\Exception\ResponseException;
+use Riari\Forum\Support\Traits\ValidatesRequests;
 
 abstract class BaseController extends Controller implements ReceiverContract
 {
