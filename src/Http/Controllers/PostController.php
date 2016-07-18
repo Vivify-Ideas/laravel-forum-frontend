@@ -76,7 +76,7 @@ class PostController extends BaseController
 
         Forum::alert('success', 'general.reply_added');
 
-        return redirect(Forum::route('thread.show', $post));
+        return redirect()->to(url()->previous() . '##post-' . $post->sequenceNumber);
     }
 
     /**
