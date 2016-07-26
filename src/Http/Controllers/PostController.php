@@ -5,7 +5,7 @@ use Illuminate\Http\Request;
 use Riari\Forum\Frontend\Events\UserCreatingPost;
 use Riari\Forum\Frontend\Events\UserEditingPost;
 use Riari\Forum\Frontend\Events\UserViewingPost;
-use Services\Forum\ThreadPresenter;
+use Services\Forum\Post\Router;
 
 class PostController extends BaseController
 {
@@ -120,9 +120,9 @@ class PostController extends BaseController
 
         Forum::alert('success', 'posts.updated');
 
-        $threadPresenter = new ThreadPresenter();
+        $postRouter = new Router();
 
-        return redirect($threadPresenter->getRedirectPageAfterEdit($post));
+        return redirect($postRouter->getRedirectPageAfterEdit($post));
     }
 
     /**
