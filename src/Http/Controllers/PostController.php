@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use Riari\Forum\Frontend\Events\UserCreatingPost;
 use Riari\Forum\Frontend\Events\UserEditingPost;
 use Riari\Forum\Frontend\Events\UserViewingPost;
+use Riari\Forum\Frontend\Events\UserCreatedPost;
 use Services\Forum\Post\Router;
 
 class PostController extends BaseController
@@ -74,6 +75,8 @@ class PostController extends BaseController
         ])->post();
 
         $post->thread->touch();
+
+        event(new UserCreatedPost($post));
 
         Forum::alert('success', 'general.reply_added');
 
