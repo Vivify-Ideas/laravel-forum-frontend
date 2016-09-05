@@ -14,11 +14,17 @@
         {
             "type": "vcs",
             "url": "https://github.com/Vivify-Ideas/laravel-forum"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/GaryBreslow/Zwivel-"
         }
     ],
     "require": {
         "php": ">=5.4.0",
-        "riari/laravel-forum": "dev-vivify"
+        "riari/laravel-forum": "dev-vivify",
+        "GaryBreslow/Zwivel-": "dev-master"
+
     },
     "autoload": {
         "psr-4": {
